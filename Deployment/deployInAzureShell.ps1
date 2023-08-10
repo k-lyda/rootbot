@@ -100,7 +100,7 @@ param(
         PrintMsg "Run in Azure Shell, Bot App Registration & Bot App Azure Resources will be created in the same subscription"
     }
 
-    $resourceGroup = $baseName+"RG"
+    $resourceGroup = "Lingaro_konradlyda_23_08_10_2214_47162"
     $appSettingFilePath= '.\code\settings\appsettings.json'
     $zipfile = '.\code.zip' 
     $newZipFile= './myCode.zip' 
