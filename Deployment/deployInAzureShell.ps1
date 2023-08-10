@@ -189,7 +189,7 @@ param(
     }
     Write-Progress -Activity "Create Azure Resource Group ${resourceGroup}"  -PercentComplete 20
     PrintMsg "Create Azure Resource Group ${resourceGroup}"
-    az group create --name $resourceGroup --location $location
+    # az group create --name $resourceGroup --location $location
 
     while (NeedDeployment -deploymentName "AZChatGPTFuncAppDeploy" -resourceGroup $resourceGroup)
     {
